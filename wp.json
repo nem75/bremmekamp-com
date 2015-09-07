@@ -1,0 +1,183 @@
+[
+{
+    "Id": "449159eec214dbc45f6dc31d99531d27bdabd3ca4bcfb82613483c614ea12e7e",
+    "Created": "2015-09-03T22:59:38.535364315Z",
+    "Path": "/entrypoint.sh",
+    "Args": [
+        "apache2-foreground"
+    ],
+    "State": {
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1097,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2015-09-07T14:14:43.955624837Z",
+        "FinishedAt": "2015-09-03T23:42:03.170259267Z"
+    },
+    "Image": "db52770e39b5e25dabaafc9d88bbcc5411aa6a5e9720835784b99f11c8a87108",
+    "NetworkSettings": {
+        "Bridge": "",
+        "EndpointID": "1377517b7ff4a50a634a2bf89a52d34109f00584b87a946fa78388885b59d893",
+        "Gateway": "172.17.42.1",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "HairpinMode": false,
+        "IPAddress": "172.17.0.2",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "LinkLocalIPv6Address": "",
+        "LinkLocalIPv6PrefixLen": 0,
+        "MacAddress": "02:42:ac:11:00:02",
+        "NetworkID": "68b7056c408909bc6a0dd0553087c31dab8a6b108a58b4be6a70aee8d32d9486",
+        "PortMapping": null,
+        "Ports": {
+            "80/tcp": [
+                {
+                    "HostIp": "0.0.0.0",
+                    "HostPort": "8080"
+                }
+            ]
+        },
+        "SandboxKey": "/var/run/docker/netns/449159eec214",
+        "SecondaryIPAddresses": null,
+        "SecondaryIPv6Addresses": null
+    },
+    "ResolvConfPath": "/mnt/sda1/var/lib/docker/containers/449159eec214dbc45f6dc31d99531d27bdabd3ca4bcfb82613483c614ea12e7e/resolv.conf",
+    "HostnamePath": "/mnt/sda1/var/lib/docker/containers/449159eec214dbc45f6dc31d99531d27bdabd3ca4bcfb82613483c614ea12e7e/hostname",
+    "HostsPath": "/mnt/sda1/var/lib/docker/containers/449159eec214dbc45f6dc31d99531d27bdabd3ca4bcfb82613483c614ea12e7e/hosts",
+    "LogPath": "/mnt/sda1/var/lib/docker/containers/449159eec214dbc45f6dc31d99531d27bdabd3ca4bcfb82613483c614ea12e7e/449159eec214dbc45f6dc31d99531d27bdabd3ca4bcfb82613483c614ea12e7e-json.log",
+    "Name": "/bremmekampcom_wp_1",
+    "RestartCount": 0,
+    "Driver": "aufs",
+    "ExecDriver": "native-0.2",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "",
+    "ExecIDs": null,
+    "HostConfig": {
+        "Binds": [
+            "/mnt/sda1/var/lib/docker/volumes/2b9a237b6c5d5878ab98b0019565855226096c25e0d2993d00ab8d0784e0fdb7/_data:/var/www/html:rw"
+        ],
+        "ContainerIDFile": "",
+        "LxcConf": null,
+        "Memory": 0,
+        "MemorySwap": 0,
+        "CpuShares": 0,
+        "CpuPeriod": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "CpuQuota": 0,
+        "BlkioWeight": 0,
+        "OomKillDisable": false,
+        "MemorySwappiness": null,
+        "Privileged": false,
+        "PortBindings": {
+            "80/tcp": [
+                {
+                    "HostIp": "",
+                    "HostPort": "8080"
+                }
+            ]
+        },
+        "Links": [
+            "/bremmekampcom_db_1:/bremmekampcom_wp_1/bremmekampcom_db_1",
+            "/bremmekampcom_db_1:/bremmekampcom_wp_1/db_1",
+            "/bremmekampcom_db_1:/bremmekampcom_wp_1/mysql"
+        ],
+        "PublishAllPorts": false,
+        "Dns": null,
+        "DnsSearch": null,
+        "ExtraHosts": [],
+        "VolumesFrom": [],
+        "Devices": null,
+        "NetworkMode": "default",
+        "IpcMode": "",
+        "PidMode": "",
+        "UTSMode": "",
+        "CapAdd": null,
+        "CapDrop": null,
+        "GroupAdd": null,
+        "RestartPolicy": {
+            "Name": "",
+            "MaximumRetryCount": 0
+        },
+        "SecurityOpt": null,
+        "ReadonlyRootfs": false,
+        "Ulimits": null,
+        "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+        },
+        "CgroupParent": "",
+        "ConsoleSize": [
+            0,
+            0
+        ]
+    },
+    "GraphDriver": {
+        "Name": "aufs",
+        "Data": null
+    },
+    "Mounts": [
+        {
+            "Source": "/mnt/sda1/var/lib/docker/volumes/2b9a237b6c5d5878ab98b0019565855226096c25e0d2993d00ab8d0784e0fdb7/_data",
+            "Destination": "/var/www/html",
+            "Mode": "rw",
+            "RW": true
+        }
+    ],
+    "Config": {
+        "Hostname": "449159eec214",
+        "Domainname": "",
+        "User": "",
+        "AttachStdin": false,
+        "AttachStdout": false,
+        "AttachStderr": false,
+        "ExposedPorts": {
+            "80/tcp": {}
+        },
+        "PublishService": "",
+        "Tty": false,
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "Env": [
+            "affinity:container==e3433ba2b0799508d49c3dde5affea72707de4874c40f2dd19af0b2aa2262a86",
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "PHP_INI_DIR=/usr/local/etc/php",
+            "PHP_EXTRA_BUILD_DEPS=apache2-dev",
+            "PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2",
+            "GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3",
+            "PHP_VERSION=5.6.12",
+            "WORDPRESS_VERSION=4.3",
+            "WORDPRESS_SHA1=1e9046b584d4eaebac9e1f7292ca7003bfc8ffd7"
+        ],
+        "Cmd": [
+            "apache2-foreground"
+        ],
+        "Image": "wordpress",
+        "Volumes": {
+            "/var/www/html": {}
+        },
+        "VolumeDriver": "",
+        "WorkingDir": "/var/www/html",
+        "Entrypoint": [
+            "/entrypoint.sh"
+        ],
+        "NetworkDisabled": false,
+        "MacAddress": "",
+        "OnBuild": null,
+        "Labels": {
+            "com.docker.compose.config-hash": "d7c468056a35c4a6c38bc916d754afddf4d37d67dbca7173819ba8e7ce009545",
+            "com.docker.compose.container-number": "1",
+            "com.docker.compose.oneoff": "False",
+            "com.docker.compose.project": "bremmekampcom",
+            "com.docker.compose.service": "wp",
+            "com.docker.compose.version": "1.4.0"
+        }
+    }
+}
+]

@@ -1,0 +1,163 @@
+[
+{
+    "Id": "2634a0751248e242c2cd612b4a6bf45ee02b19e6d03e3eba2cec5006a11f5ba1",
+    "Created": "2015-09-03T22:59:37.423589848Z",
+    "Path": "/docker-entrypoint.sh",
+    "Args": [
+        "mysqld"
+    ],
+    "State": {
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1069,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2015-09-07T14:14:43.378139101Z",
+        "FinishedAt": "2015-09-03T23:42:05.180632184Z"
+    },
+    "Image": "f2485761e7145e79043d5213ba6e71d93d777e3cbf06234591f59647571e2fa3",
+    "NetworkSettings": {
+        "Bridge": "",
+        "EndpointID": "58e2a2ac8d13b4d6cdc26ec06531f5c894a1b72216f2975d810944808288a100",
+        "Gateway": "172.17.42.1",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "HairpinMode": false,
+        "IPAddress": "172.17.0.1",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "LinkLocalIPv6Address": "",
+        "LinkLocalIPv6PrefixLen": 0,
+        "MacAddress": "02:42:ac:11:00:01",
+        "NetworkID": "68b7056c408909bc6a0dd0553087c31dab8a6b108a58b4be6a70aee8d32d9486",
+        "PortMapping": null,
+        "Ports": {
+            "3306/tcp": null
+        },
+        "SandboxKey": "/var/run/docker/netns/2634a0751248",
+        "SecondaryIPAddresses": null,
+        "SecondaryIPv6Addresses": null
+    },
+    "ResolvConfPath": "/mnt/sda1/var/lib/docker/containers/2634a0751248e242c2cd612b4a6bf45ee02b19e6d03e3eba2cec5006a11f5ba1/resolv.conf",
+    "HostnamePath": "/mnt/sda1/var/lib/docker/containers/2634a0751248e242c2cd612b4a6bf45ee02b19e6d03e3eba2cec5006a11f5ba1/hostname",
+    "HostsPath": "/mnt/sda1/var/lib/docker/containers/2634a0751248e242c2cd612b4a6bf45ee02b19e6d03e3eba2cec5006a11f5ba1/hosts",
+    "LogPath": "/mnt/sda1/var/lib/docker/containers/2634a0751248e242c2cd612b4a6bf45ee02b19e6d03e3eba2cec5006a11f5ba1/2634a0751248e242c2cd612b4a6bf45ee02b19e6d03e3eba2cec5006a11f5ba1-json.log",
+    "Name": "/bremmekampcom_db_1",
+    "RestartCount": 0,
+    "Driver": "aufs",
+    "ExecDriver": "native-0.2",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "",
+    "ExecIDs": null,
+    "HostConfig": {
+        "Binds": [
+            "/mnt/sda1/var/lib/docker/volumes/b9bb582653ebbc6976076b1ced797779a660db46c9fd1cba278030f8c88a2371/_data:/var/lib/mysql:rw"
+        ],
+        "ContainerIDFile": "",
+        "LxcConf": null,
+        "Memory": 0,
+        "MemorySwap": 0,
+        "CpuShares": 0,
+        "CpuPeriod": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "CpuQuota": 0,
+        "BlkioWeight": 0,
+        "OomKillDisable": false,
+        "MemorySwappiness": null,
+        "Privileged": false,
+        "PortBindings": {},
+        "Links": null,
+        "PublishAllPorts": false,
+        "Dns": null,
+        "DnsSearch": null,
+        "ExtraHosts": [],
+        "VolumesFrom": [],
+        "Devices": null,
+        "NetworkMode": "default",
+        "IpcMode": "",
+        "PidMode": "",
+        "UTSMode": "",
+        "CapAdd": null,
+        "CapDrop": null,
+        "GroupAdd": null,
+        "RestartPolicy": {
+            "Name": "",
+            "MaximumRetryCount": 0
+        },
+        "SecurityOpt": null,
+        "ReadonlyRootfs": false,
+        "Ulimits": null,
+        "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+        },
+        "CgroupParent": "",
+        "ConsoleSize": [
+            0,
+            0
+        ]
+    },
+    "GraphDriver": {
+        "Name": "aufs",
+        "Data": null
+    },
+    "Mounts": [
+        {
+            "Source": "/mnt/sda1/var/lib/docker/volumes/b9bb582653ebbc6976076b1ced797779a660db46c9fd1cba278030f8c88a2371/_data",
+            "Destination": "/var/lib/mysql",
+            "Mode": "rw",
+            "RW": true
+        }
+    ],
+    "Config": {
+        "Hostname": "2634a0751248",
+        "Domainname": "",
+        "User": "",
+        "AttachStdin": false,
+        "AttachStdout": false,
+        "AttachStderr": false,
+        "ExposedPorts": {
+            "3306/tcp": {}
+        },
+        "PublishService": "",
+        "Tty": false,
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "Env": [
+            "MYSQL_ROOT_PASSWORD=beiZ9chaegee9eimey4a",
+            "affinity:container==b6eab8b63bc6579306ded977f5ca71ff1697cb20bf3a7e11c5b1b9f2f2c3264a",
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MARIADB_MAJOR=10.0",
+            "MARIADB_VERSION=10.0.21+maria-1~jessie"
+        ],
+        "Cmd": [
+            "mysqld"
+        ],
+        "Image": "mariadb",
+        "Volumes": {
+            "/var/lib/mysql": {}
+        },
+        "VolumeDriver": "",
+        "WorkingDir": "",
+        "Entrypoint": [
+            "/docker-entrypoint.sh"
+        ],
+        "NetworkDisabled": false,
+        "MacAddress": "",
+        "OnBuild": null,
+        "Labels": {
+            "com.docker.compose.config-hash": "d115a07cdc0b3127181172cc51a85584c9bafe371392a4473bca93792da51cc0",
+            "com.docker.compose.container-number": "1",
+            "com.docker.compose.oneoff": "False",
+            "com.docker.compose.project": "bremmekampcom",
+            "com.docker.compose.service": "db",
+            "com.docker.compose.version": "1.4.0"
+        }
+    }
+}
+]
