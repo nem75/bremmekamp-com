@@ -4,8 +4,22 @@ wp:
     - db:mysql
   ports:
     - 8080:80
+  volumes_from:
+    - wp-data
+
+wp-data:
+  image: wordpress
+  command: /bin/true
+  volumes:
+    - /var/www/html
 
 db:
   image: mariadb
-  environment:
-    MYSQL_ROOT_PASSWORD: beiZ9chaegee9eimey4a
+  volumes_from:
+    - db-data
+
+db-data:
+  image: mariadb
+  command: /bin/true
+  volumes:
+    - /var/lib/mysql
